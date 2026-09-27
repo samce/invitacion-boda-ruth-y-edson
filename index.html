@@ -2898,6 +2898,77 @@
       animateBurst();
     }
 
+    // 8. Integración Inteligente de Google Calendar (App en Celulares / Web en PC)
+    function setupCalendarButton() {
+      const btn = document.getElementById('btn-add-calendar');
+      if (!btn) return;
+
+      const title = "Boda de Ruth Yaneth & Edson Mateo";
+      const details = "Acompáñanos a celebrar nuestra boda.\nCeremonia: Templo Compañía de Jesús (10:00 am)\nRecepción: Eventos Lufa (1:00 pm).";
+      const location = "Templo Compañía de Jesús, Plaza de Armas, Cusco";
+      const dates = "20261128T150000Z/20261129T030000Z";
+
+      const encTitle = encodeURIComponent(title);
+      const encDetails = encodeURIComponent(details);
+      const encLocation = encodeURIComponent(location);
+
+      const webUrl = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encTitle}&dates=${dates}&details=${encDetails}&location=${encLocation}`;
+      
+      const ua = navigator.userAgent || navigator.vendor || window.opera || '';
+      const isAndroid = /Android/i.test(ua);
+      const isIOS = /iPhone|iPad|iPod/i.test(ua);
+
+      if (isAndroid) {
+        // En celulares Android: abrir directamente la app de Google Calendar con intent nativo
+        const intentUrl = `intent://calendar.google.com/calendar/render?action=TEMPLATE&text=${encTitle}&dates=${dates}&details=${encDetails}&location=${encLocation}#Intent;scheme=https;package=com.google.android.calendar;S.browser_fallback_url=${encodeURIComponent(webUrl)};end`;
+        btn.setAttribute('href', intentUrl);
+        btn.removeAttribute('target');
+      } else if (isIOS) {
+        // En iPhone: Generar archivo de evento .ics para abrir directamente en la app Calendario de Apple
+        btn.removeAttribute('target');
+        btn.setAttribute('href', '#');
+        btn.addEventListener('click', (e) => {
+          e.preventDefault();
+          const icsContent = [
+            'BEGIN:VCALENDAR',
+            'VERSION:2.0',
+            'PRODID:-//Boda Ruth y Edson//ES',
+            'CALSCALE:GREGORIAN',
+            'METHOD:PUBLISH',
+            'BEGIN:VEVENT',
+            'SUMMARY:Boda de Ruth Yaneth & Edson Mateo',
+            'DESCRIPTION:Acompáñanos a celebrar nuestra boda.\\nCeremonia: Templo Compañía de Jesús (10:00 am)\\nRecepción: Eventos Lufa (1:00 pm).',
+            'LOCATION:Templo Compañía de Jesús\\, Plaza de Armas\\, Cusco',
+            'DTSTART:20261128T150000Z',
+            'DTEND:20261129T030000Z',
+            'STATUS:CONFIRMED',
+            'SEQUENCE:0',
+            'BEGIN:VALARM',
+            'TRIGGER:-PT24H',
+            'DESCRIPTION:Recordatorio de la Boda de Ruth y Edson mañana',
+            'ACTION:DISPLAY',
+            'END:VALARM',
+            'END:VEVENT',
+            'END:VCALENDAR'
+          ].join('\r\n');
+
+          const blob = new Blob([icsContent], { type: 'text/calendar;charset=utf-8' });
+          const url = window.URL.createObjectURL(blob);
+          const link = document.createElement('a');
+          link.href = url;
+          link.setAttribute('download', 'Boda-Ruth-y-Edson.ics');
+          document.body.appendChild(link);
+          link.click();
+          document.body.removeChild(link);
+          window.URL.revokeObjectURL(url);
+        });
+      } else {
+        // En computadora (PC/Mac): Abrir en Google Calendar en pestaña nueva
+        btn.setAttribute('href', webUrl);
+        btn.setAttribute('target', '_blank');
+      }
+    }
+
     document.addEventListener('DOMContentLoaded', () => {
       updateCountdown();
       setupURLParams();
@@ -2905,6 +2976,7 @@
       setupEnvelope();
       setupAudioWidget();
       setupWeddingPetalsCanvas();
+      setupCalendarButton();
     });
   </script>
 </body>
