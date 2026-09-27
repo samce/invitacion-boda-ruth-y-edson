@@ -2898,7 +2898,7 @@
       animateBurst();
     }
 
-    // 8. Integración Inteligente de Google Calendar (App en Celulares / Web en PC)
+    // 8. Integración Inteligente de Google Calendar (App en Celulares Android / Apple Calendar en iOS / Web en PC)
     function setupCalendarButton() {
       const btn = document.getElementById('btn-add-calendar');
       if (!btn) return;
@@ -2907,6 +2907,10 @@
       const details = "Acompáñanos a celebrar nuestra boda.\nCeremonia: Templo Compañía de Jesús (10:00 am)\nRecepción: Eventos Lufa (1:00 pm).";
       const location = "Templo Compañía de Jesús, Plaza de Armas, Cusco";
       const dates = "20261128T150000Z/20261129T030000Z";
+
+      // Tiempos exactos en milisegundos para Android Intent (28 Nov 2026 10:00 am a 10:00 pm Hora Perú UTC-5)
+      const beginTime = new Date('2026-11-28T10:00:00-05:00').getTime();
+      const endTime = new Date('2026-11-28T22:00:00-05:00').getTime();
 
       const encTitle = encodeURIComponent(title);
       const encDetails = encodeURIComponent(details);
@@ -2919,12 +2923,12 @@
       const isIOS = /iPhone|iPad|iPod/i.test(ua);
 
       if (isAndroid) {
-        // En celulares Android: abrir directamente la app de Google Calendar con intent nativo
-        const intentUrl = `intent://calendar.google.com/calendar/render?action=TEMPLATE&text=${encTitle}&dates=${dates}&details=${encDetails}&location=${encLocation}#Intent;scheme=https;package=com.google.android.calendar;S.browser_fallback_url=${encodeURIComponent(webUrl)};end`;
-        btn.setAttribute('href', intentUrl);
+        // En celulares Android: abrir directamente la APP de Google Calendar mediante el Intent del sistema
+        const androidIntent = `intent:#Intent;action=android.intent.action.INSERT;type=vnd.android.cursor.item/event;S.title=${encTitle};S.eventLocation=${encLocation};S.description=${encDetails};l.beginTime=${beginTime};l.endTime=${endTime};S.browser_fallback_url=${encodeURIComponent(webUrl)};end`;
+        btn.setAttribute('href', androidIntent);
         btn.removeAttribute('target');
       } else if (isIOS) {
-        // En iPhone: Generar archivo de evento .ics para abrir directamente en la app Calendario de Apple
+        // En iPhone (iOS): Generar evento nativo .ics para abrir en Apple Calendar directamente sin pedir login
         btn.removeAttribute('target');
         btn.setAttribute('href', '#');
         btn.addEventListener('click', (e) => {
@@ -2963,7 +2967,7 @@
           window.URL.revokeObjectURL(url);
         });
       } else {
-        // En computadora (PC/Mac): Abrir en Google Calendar en pestaña nueva
+        // En computadora (PC / Mac): Abrir la web de Google Calendar en pestaña nueva
         btn.setAttribute('href', webUrl);
         btn.setAttribute('target', '_blank');
       }
