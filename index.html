@@ -15,12 +15,12 @@
     :root {
       --bg-canvas: #EDECE7;
       --bg-card: #FAF9F5;
-      --green-dark: #02362B;
-      --green-emerald: #0C4B3D;
+      --green-dark: #082315;
+      --green-emerald: #0B331F;
       --gold-caramel: #B38B5A;
       --gold-deep: #966E3A;
-      --text-main: #02362B;
-      --text-muted: #334D44;
+      --text-main: #082315;
+      --text-muted: #123320;
     }
 
     * {
@@ -46,11 +46,11 @@
       max-width: 680px;
       background-color: #FAF8F4;
       background-image: 
-        radial-gradient(circle at 50% 16%, rgba(216, 196, 236, 0.55) 0%, rgba(226, 212, 240, 0.25) 35%, transparent 68%),
-        radial-gradient(circle at 85% 35%, rgba(220, 203, 238, 0.45) 0%, transparent 48%),
-        radial-gradient(circle at 12% 48%, rgba(216, 196, 236, 0.4) 0%, transparent 45%),
-        radial-gradient(circle at 88% 70%, rgba(224, 210, 240, 0.35) 0%, transparent 45%),
-        radial-gradient(circle at 20% 88%, rgba(220, 203, 238, 0.3) 0%, transparent 40%);
+        radial-gradient(circle at 50% 16%, rgba(132, 152, 104, 0.42) 0%, rgba(162, 181, 134, 0.20) 35%, transparent 68%),
+        radial-gradient(circle at 85% 35%, rgba(141, 161, 114, 0.35) 0%, transparent 48%),
+        radial-gradient(circle at 12% 48%, rgba(122, 141, 95, 0.30) 0%, transparent 45%),
+        radial-gradient(circle at 88% 70%, rgba(135, 155, 108, 0.28) 0%, transparent 45%),
+        radial-gradient(circle at 20% 88%, rgba(141, 161, 114, 0.25) 0%, transparent 40%);
       position: relative;
       box-shadow: 0 0 50px rgba(0, 0, 0, 0.14);
       overflow: hidden;
@@ -411,12 +411,12 @@
     .quote-text {
       font-family: 'Cormorant Garamond', serif;
       font-style: italic;
-      font-size: 1.25rem;
+      font-size: 1.28rem;
       line-height: 1.6;
-      color: #2D4A3E;
+      color: var(--green-dark);
       max-width: 520px;
       margin: 0 auto 28px;
-      font-weight: 500;
+      font-weight: 600;
       position: relative;
       z-index: 3;
     }
@@ -479,7 +479,7 @@
       color: var(--green-dark);
       line-height: 1.25;
       margin-bottom: 20px;
-      text-shadow: 0 2px 8px rgba(2, 54, 43, 0.06);
+      text-shadow: 0 2px 10px rgba(8, 35, 21, 0.12);
       position: relative;
       z-index: 3;
       padding: 0 8px;
@@ -1254,7 +1254,7 @@
     }
 
     /* ========================================================
-       1. LUXURY INTERACTIVE ENVELOPE (VERDE ELEGANTE NUPCIAL)
+       1. LUXURY INTERACTIVE ENVELOPE (VERDE MUSGO & BLANCO PERLA)
        ======================================================== */
     .envelope-overlay {
       position: fixed;
@@ -1262,12 +1262,12 @@
       left: 0;
       width: 100vw;
       height: 100vh;
-      background-color: #021a14;
+      background-color: #FFFFFF;
       background-image: 
-        radial-gradient(circle at 50% 38%, rgba(13, 74, 59, 0.95) 0%, rgba(6, 46, 36, 0.98) 55%, #021a14 100%),
-        radial-gradient(circle at 15% 15%, rgba(179, 139, 90, 0.15) 0%, transparent 45%),
-        radial-gradient(circle at 85% 15%, rgba(179, 139, 90, 0.15) 0%, transparent 45%),
-        radial-gradient(circle at 50% 85%, rgba(13, 74, 59, 0.5) 0%, transparent 60%);
+        radial-gradient(circle at 50% 38%, #FFFFFF 0%, #FAFAF8 65%, #F4F2EC 100%),
+        radial-gradient(circle at 15% 15%, rgba(218, 178, 108, 0.14) 0%, transparent 45%),
+        radial-gradient(circle at 85% 15%, rgba(218, 178, 108, 0.14) 0%, transparent 45%),
+        radial-gradient(circle at 50% 85%, rgba(114, 133, 83, 0.08) 0%, transparent 60%);
       z-index: 10000;
       display: flex;
       align-items: center;
@@ -1288,8 +1288,8 @@
       width: clamp(150px, 22vw, 240px);
       pointer-events: none;
       z-index: 1;
-      opacity: 0.88;
-      filter: drop-shadow(0 8px 25px rgba(0, 0, 0, 0.65));
+      opacity: 0.95;
+      filter: drop-shadow(0 6px 18px rgba(65, 80, 48, 0.25));
       transition: opacity 0.5s ease;
     }
     .env-corner-tl {
@@ -1338,7 +1338,7 @@
       top: 110px;
       left: 50%;
       transform: translate(-50%, -50%);
-      background: radial-gradient(ellipse at center, rgba(230, 202, 133, 0.25) 0%, rgba(179, 139, 90, 0.08) 50%, transparent 72%);
+      background: radial-gradient(ellipse at center, rgba(218, 178, 108, 0.32) 0%, rgba(114, 133, 83, 0.12) 50%, transparent 72%);
       filter: blur(28px);
       pointer-events: none;
       z-index: 0;
@@ -1349,14 +1349,15 @@
       50% { transform: translate(-50%, -50%) scale(1.08); opacity: 1; }
     }
 
+    /* Sobre Verde Musgo */
     .envelope-box {
       position: relative;
       width: 320px;
       height: 210px;
-      background: #FAF8F4;
+      background: #728553;
       border-radius: 8px;
-      box-shadow: 0 25px 55px rgba(0, 0, 0, 0.55), 0 0 35px rgba(179, 139, 90, 0.35);
-      border: 1px solid rgba(230, 202, 133, 0.45);
+      box-shadow: 0 22px 50px rgba(55, 70, 38, 0.35), 0 8px 22px rgba(0, 0, 0, 0.12), 0 0 35px rgba(218, 178, 108, 0.4);
+      border: 1px solid rgba(230, 202, 133, 0.65);
       perspective: 1000px;
       margin-bottom: 25px;
       cursor: pointer;
@@ -1365,10 +1366,10 @@
     }
     .envelope-box:hover {
       transform: translateY(-4px);
-      box-shadow: 0 30px 65px rgba(0, 0, 0, 0.65), 0 0 45px rgba(230, 202, 133, 0.5);
+      box-shadow: 0 28px 60px rgba(55, 70, 38, 0.45), 0 10px 25px rgba(0, 0, 0, 0.16), 0 0 45px rgba(230, 202, 133, 0.55);
     }
 
-    /* Solapa triangular superior con perspectiva 3D */
+    /* Solapa triangular superior en Verde Musgo Luminoso */
     .envelope-flap {
       position: absolute;
       top: 0;
@@ -1377,27 +1378,27 @@
       height: 0;
       border-left: 160px solid transparent;
       border-right: 160px solid transparent;
-      border-top: 115px solid #F0ECE1;
+      border-top: 115px solid #7D925C;
       transform-origin: top;
       transition: transform 0.85s cubic-bezier(0.4, 0, 0.2, 1), z-index 0.2s;
       z-index: 5;
-      filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+      filter: drop-shadow(0 5px 8px rgba(35, 45, 25, 0.35));
     }
     .envelope-box.is-open .envelope-flap {
       transform: rotateX(180deg);
       z-index: 1;
     }
 
-    /* Solapa frontal inferior/lateral */
+    /* Solapa frontal inferior/lateral con pliegues en Verde Musgo sombreado */
     .envelope-pocket {
       position: absolute;
       bottom: 0;
       left: 0;
       width: 0;
       height: 0;
-      border-left: 160px solid #EAE5D9;
-      border-right: 160px solid #EAE5D9;
-      border-bottom: 110px solid #FAF9F6;
+      border-left: 160px solid #68794B;
+      border-right: 160px solid #68794B;
+      border-bottom: 110px solid #768956;
       border-top: 95px solid transparent;
       border-radius: 0 0 8px 8px;
       z-index: 4;
@@ -1412,14 +1413,14 @@
       right: 20px;
       bottom: 15px;
       background: #FFFFFF;
-      border: 1px solid #B38B5A;
+      border: 1px solid #C4A468;
       border-radius: 4px;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       padding: 10px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      box-shadow: 0 4px 14px rgba(0,0,0,0.14);
       z-index: 2;
       transition: transform 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
     }
@@ -1431,13 +1432,13 @@
       font-family: 'Playfair Display', serif;
       font-size: 1.6rem;
       font-weight: 700;
-      color: #966E3A;
+      color: #8C6F3B;
       letter-spacing: 2px;
     }
     .peek-title {
       font-family: 'Alex Brush', cursive;
       font-size: 2.1rem;
-      color: #02362B;
+      color: #082315;
       line-height: 1;
       margin: 2px 0;
     }
@@ -1445,7 +1446,7 @@
       font-family: 'Montserrat', sans-serif;
       font-size: 0.68rem;
       letter-spacing: 1.5px;
-      color: #555;
+      color: #6C7D65;
       text-transform: uppercase;
       font-weight: 600;
     }
@@ -1459,7 +1460,7 @@
       height: 64px;
       background: radial-gradient(circle at 35% 35%, #F5DE9E 0%, #D8AB64 45%, #9E7434 85%, #6B4918 100%);
       border-radius: 50%;
-      box-shadow: 0 6px 18px rgba(0,0,0,0.45), 0 0 20px rgba(230, 202, 133, 0.5), inset 0 2px 3px rgba(255,255,255,0.6), inset 0 -2px 4px rgba(0,0,0,0.4);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.35), 0 0 20px rgba(230, 202, 133, 0.6), inset 0 2px 3px rgba(255,255,255,0.6), inset 0 -2px 4px rgba(0,0,0,0.4);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -1495,18 +1496,18 @@
     }
     @keyframes sealPulseGlow {
       0%, 100% {
-        box-shadow: 0 6px 18px rgba(0,0,0,0.45), 0 0 15px rgba(230, 202, 133, 0.4);
+        box-shadow: 0 6px 18px rgba(0,0,0,0.35), 0 0 16px rgba(230, 202, 133, 0.45);
         transform: scale(1);
       }
       50% {
-        box-shadow: 0 8px 24px rgba(0,0,0,0.5), 0 0 28px rgba(230, 202, 133, 0.75);
+        box-shadow: 0 8px 24px rgba(0,0,0,0.45), 0 0 28px rgba(230, 202, 133, 0.8);
         transform: scale(1.05);
       }
     }
 
-    /* Meta información debajo del sobre con colores de gala */
+    /* Meta información debajo del sobre con colores sobre fondo blanco perla */
     .envelope-invite-meta {
-      color: #FFFFFF;
+      color: #24351E;
       margin-top: 8px;
     }
     .envelope-guest-badge {
@@ -1514,18 +1515,18 @@
       font-size: 0.82rem;
       letter-spacing: 3px;
       text-transform: uppercase;
-      color: #F0D999;
+      color: #8C6F3B;
       margin-bottom: 6px;
       font-weight: 700;
-      text-shadow: 0 0 12px rgba(240, 217, 153, 0.45);
+      text-shadow: 0 1px 6px rgba(218, 178, 108, 0.35);
     }
     .envelope-names {
       font-family: 'Alex Brush', cursive;
       font-size: clamp(2rem, 7vw, 3.4rem);
-      color: #FFFFFF;
+      color: #082315;
       line-height: 1.15;
       margin-bottom: 4px;
-      text-shadow: 0 2px 14px rgba(0,0,0,0.65), 0 0 20px rgba(230, 202, 133, 0.35);
+      text-shadow: 0 2px 8px rgba(8, 35, 21, 0.15);
       white-space: nowrap;
       text-align: center;
       width: 100%;
@@ -1544,14 +1545,14 @@
     .env-gold-flourish .flourish-line {
       flex: 1;
       height: 1px;
-      background: linear-gradient(to right, transparent, rgba(230, 202, 133, 0.75), transparent);
+      background: linear-gradient(to right, transparent, rgba(184, 145, 80, 0.75), transparent);
     }
     .env-gold-flourish svg {
-      filter: drop-shadow(0 0 6px rgba(230, 202, 133, 0.6));
+      filter: drop-shadow(0 0 5px rgba(218, 178, 108, 0.5));
       animation: ringsPulse 3s ease-in-out infinite;
     }
     @keyframes ringsPulse {
-      0%, 100% { transform: scale(1); filter: drop-shadow(0 0 4px rgba(230, 202, 133, 0.5)); }
+      0%, 100% { transform: scale(1); filter: drop-shadow(0 0 4px rgba(218, 178, 108, 0.4)); }
       50% { transform: scale(1.12); filter: drop-shadow(0 0 10px rgba(245, 222, 158, 0.95)); }
     }
 
@@ -1559,15 +1560,15 @@
       font-family: 'Cormorant Garamond', serif;
       font-size: 1.3rem;
       font-style: italic;
-      color: #E0EBE6;
+      color: #556649;
       margin-bottom: 22px;
-      text-shadow: 0 1px 4px rgba(0,0,0,0.4);
+      text-shadow: none;
     }
 
     /* Botón animado de apertura con destello dorado */
     .btn-open-envelope {
       background: linear-gradient(135deg, #c59f63 0%, #fae5ad 50%, #ad8243 100%);
-      color: #03251D;
+      color: #24351E;
       font-family: 'Playfair Display', serif;
       font-weight: 700;
       font-size: 1.05rem;
@@ -1575,7 +1576,7 @@
       padding: 14px 34px;
       border-radius: 35px;
       cursor: pointer;
-      box-shadow: 0 8px 28px rgba(179, 139, 90, 0.5), 0 0 20px rgba(250, 229, 173, 0.3);
+      box-shadow: 0 8px 24px rgba(179, 139, 90, 0.35), 0 0 20px rgba(250, 229, 173, 0.3);
       transition: all 0.3s ease;
       display: inline-flex;
       align-items: center;
@@ -1600,13 +1601,13 @@
     }
     .btn-open-envelope:hover {
       transform: translateY(-2px) scale(1.04);
-      box-shadow: 0 12px 35px rgba(230, 202, 133, 0.7);
+      box-shadow: 0 12px 35px rgba(218, 178, 108, 0.6);
     }
 
     .btn-skip-envelope {
       background: none;
       border: none;
-      color: #B3D4C7;
+      color: #6C7D65;
       font-family: 'Montserrat', sans-serif;
       font-size: 0.8rem;
       margin-top: 14px;
@@ -1618,7 +1619,7 @@
       transition: color 0.2s ease;
     }
     .btn-skip-envelope:hover {
-      color: #FFFFFF;
+      color: #24351E;
     }
 
     /* Canvas de destellos y copos de nieve flotantes */
@@ -2002,13 +2003,13 @@
         <div class="envelope-flap" id="envelope-flap">
           <div class="wax-seal" id="wax-seal" title="Toca para abrir">
             <div class="wax-seal-inner">
-              <span>R&nbsp;&amp;&nbsp;E</span>
+              <span>Y&nbsp;&amp;&nbsp;E</span>
             </div>
           </div>
         </div>
         <div class="envelope-pocket"></div>
         <div class="envelope-card-peek">
-          <div class="peek-monogram">R &amp; E</div>
+          <div class="peek-monogram">Y &amp; E</div>
           <div class="peek-title">Nuestra Boda</div>
           <div class="peek-date">28 · Noviembre · 2026</div>
         </div>
@@ -2025,7 +2026,7 @@
           </svg>
           <span class="flourish-line"></span>
         </div>
-        <p class="envelope-date-preview">Sábado, 28 de Noviembre de 2026 · 10:00 am</p>
+        <p class="envelope-date-preview">Sábado, 28 de Noviembre de 2026 · 9:30 am</p>
         <button id="open-envelope-btn" class="btn-open-envelope">
           ✨ Abrir Invitación
         </button>
@@ -2143,7 +2144,7 @@
         <div class="date-day-name">Sábado</div>
         <div class="date-number-col">
           <div class="date-number">28</div>
-          <div class="date-time">10:00 am</div>
+          <div class="date-time">9:30 am</div>
         </div>
         <div class="date-month-name">Noviembre</div>
       </div>
@@ -2169,7 +2170,7 @@
 
       <!-- Botón Agregar a Calendario -->
       <div class="calendar-add-wrapper">
-        <a id="btn-add-calendar" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Boda+de+Ruth+Yaneth+%26+Edson+Mateo&dates=20261128T150000Z/20261129T030000Z&details=Acomp%C3%A1%C3%B1anos+a+celebrar+nuestra+boda.+Ceremonia:+Templo+Compa%C3%B1%C3%ADa+de+Jes%C3%BAs+(10:00+am).+Recepci%C3%B3n:+Eventos+Lufa+(1:00+pm).&location=Templo+Compa%C3%B1%C3%ADa+de+Jes%C3%BAs,+Plaza+de+Armas,+Cusco" target="_blank" rel="noopener noreferrer" class="btn-calendar-gold" title="Añadir a Google Calendar">
+        <a id="btn-add-calendar" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Boda+de+Ruth+Yaneth+%26+Edson+Mateo&dates=20261128T143000Z/20261129T030000Z&details=Acomp%C3%A1%C3%B1anos+a+celebrar+nuestra+boda.+Ceremonia:+Templo+Compa%C3%B1%C3%ADa+de+Jes%C3%BAs+(9:30+am).+Recepci%C3%B3n:+Eventos+Lufa+(1:00+pm).&location=Templo+Compa%C3%B1%C3%ADa+de+Jes%C3%BAs,+Plaza+de+Armas,+Cusco" target="_blank" rel="noopener noreferrer" class="btn-calendar-gold" title="Añadir a Google Calendar">
           <svg class="calendar-icon-svg" viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
             <path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20a2 2 0 002 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11zM7 11h5v5H7z"/>
           </svg>
@@ -2220,7 +2221,7 @@
         <img src="assets/church-main.svg" alt="Iglesia" class="church-vector-img" />
         <div class="venue-section-title">Ceremonia Religiosa</div>
         <div class="venue-place-name">Templo Compañía de Jesús – Plaza de Armas Cusco</div>
-        <div class="venue-hour-tag">10:00 am</div>
+        <div class="venue-hour-tag">9:30 am</div>
         <div class="venue-buttons-dual">
           <a href="https://www.google.com/maps/search/?api=1&query=Templo+de+la+Compa%C3%B1ia+de+Jes%C3%BAs+Plaza+de+Armas+Cusco" target="_blank" rel="noopener noreferrer" class="btn-map-action btn-map-google" title="Abrir en Google Maps">
             <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
@@ -2259,14 +2260,14 @@
 
       <div class="timeline-vertical-flow">
 
-        <!-- 10:00 AM -->
+        <!-- 9:30 AM -->
         <div class="timeline-row-item">
           <div class="timeline-icon-col">
             <img src="assets/church-small.svg" alt="Ceremonia Religiosa" />
           </div>
           <div class="timeline-node-dot"></div>
           <div class="timeline-info-col">
-            <div class="timeline-hour-text">10:00 AM</div>
+            <div class="timeline-hour-text">9:30 AM</div>
             <div class="timeline-desc-text">CEREMONIA RELIGIOSA</div>
           </div>
         </div>
@@ -2424,22 +2425,22 @@
   <div id="copy-toast">Copiado con éxito</div>
 
   <script>
-    // 1. Contador Regresivo en tiempo real al Sábado 28 de Noviembre a las 10:00 AM
+    // 1. Contador Regresivo en tiempo real al Sábado 28 de Noviembre a las 9:30 AM
     function updateCountdown() {
       const params = new URLSearchParams(window.location.search);
       const customDate = params.get('fecha');
       let target;
       
       if (customDate) {
-        target = new Date(customDate.includes('T') ? customDate : `${customDate}T10:00:00`);
+        target = new Date(customDate.includes('T') ? customDate : `${customDate}T09:30:00`);
       } else {
         const yearParam = params.get('year') || params.get('anio');
         const now = new Date();
         const baseYear = yearParam ? parseInt(yearParam, 10) : now.getFullYear();
-        let candidate = new Date(`${baseYear}-11-28T10:00:00`);
+        let candidate = new Date(`${baseYear}-11-28T09:30:00`);
         if (!yearParam && candidate.getTime() <= now.getTime()) {
           // Si no se especificó año y la fecha de este año ya pasó, proyecta al siguiente
-          candidate = new Date(`${baseYear + 1}-11-28T10:00:00`);
+          candidate = new Date(`${baseYear + 1}-11-28T09:30:00`);
         }
         target = candidate;
       }
@@ -2684,14 +2685,15 @@
       }
 
       function createParticle(randomY = false) {
-        const isPetal = Math.random() < 0.62; // 62% pétalos de rosa blanca / marfil, 38% destellos dorados
+        const isPetal = Math.random() < 0.62; // 62% hojitas y pétalos verde musgo / eucalipto, 38% destellos dorados
         if (isPetal) {
-          const size = Math.random() * 5 + 6; // Tamaño del pétalo
+          const size = Math.random() * 5 + 6; // Tamaño del pétalo / hojita
           const colors = [
-            'rgba(255, 255, 255, 0.92)',
-            'rgba(255, 253, 245, 0.9)',
-            'rgba(250, 245, 235, 0.88)',
-            'rgba(244, 237, 224, 0.85)'
+            '#788C5C', // Verde musgo medio
+            '#718553', // Verde musgo base
+            '#849868', // Verde eucalipto suave
+            '#657748', // Verde oliva profundo
+            '#8DA172'  // Verde salvia luminoso
           ];
           return {
             type: 'petal',
@@ -2706,7 +2708,7 @@
             rotSpeed: (Math.random() - 0.5) * 0.025,
             flip: Math.random() * Math.PI * 2,
             flipSpeed: Math.random() * 0.03 + 0.015,
-            opacity: Math.random() * 0.35 + 0.65
+            opacity: Math.random() * 0.25 + 0.75
           };
         } else {
           // Destello dorado de boda
@@ -2717,7 +2719,7 @@
             x: Math.random() * w,
             y: randomY ? Math.random() * h : -15,
             size: isStar ? (Math.random() * 2.8 + 2.2) : (Math.random() * 2 + 1.2),
-            color: Math.random() > 0.5 ? '#F7E6B5' : '#E6CA85',
+            color: Math.random() > 0.5 ? '#B88B42' : '#C59F63',
             speedY: Math.random() * 0.6 + 0.3,
             swaySpeed: Math.random() * 0.025 + 0.015,
             angle: Math.random() * Math.PI * 2,
@@ -2740,9 +2742,10 @@
           ctx.scale(1, scaleY);
           ctx.globalAlpha = p.opacity;
 
-          // Sombra delicada para efecto flotante
-          ctx.shadowColor = 'rgba(0, 0, 0, 0.2)';
-          ctx.shadowBlur = 5;
+          // Sombra delicada visible sobre fondo blanco
+          ctx.shadowColor = 'rgba(50, 65, 35, 0.22)';
+          ctx.shadowBlur = 6;
+          ctx.shadowOffsetY = 2;
 
           const s = p.size;
           ctx.beginPath();
@@ -2750,20 +2753,20 @@
           ctx.bezierCurveTo(s * 0.85, -s * 0.65, s * 0.95, s * 0.45, 0, s);
           ctx.bezierCurveTo(-s * 0.95, s * 0.45, -s * 0.85, -s * 0.65, 0, -s);
 
-          // Gradiente suave de marfil y blanco de boda
+          // Gradiente botánico verde musgo a eucalipto
           const grad = ctx.createRadialGradient(0, -s * 0.2, s * 0.1, 0, 0, s);
-          grad.addColorStop(0, '#FFFFFF');
-          grad.addColorStop(0.7, p.color);
-          grad.addColorStop(1, 'rgba(230, 218, 200, 0.7)');
+          grad.addColorStop(0, '#98AE7E');
+          grad.addColorStop(0.5, p.color);
+          grad.addColorStop(1, '#56663E');
           ctx.fillStyle = grad;
           ctx.fill();
 
-          // Nervadura central sutil
+          // Nervadura central de la hoja
           ctx.beginPath();
           ctx.moveTo(0, -s * 0.65);
           ctx.quadraticCurveTo(s * 0.08, 0, 0, s * 0.65);
-          ctx.strokeStyle = 'rgba(255, 255, 255, 0.6)';
-          ctx.lineWidth = 0.8;
+          ctx.strokeStyle = 'rgba(255, 255, 255, 0.55)';
+          ctx.lineWidth = 0.9;
           ctx.stroke();
 
           ctx.restore();
@@ -2855,7 +2858,7 @@
           size: isPetal ? (Math.random() * 5 + 6) : (Math.random() * 4 + 2),
           rotation: Math.random() * Math.PI * 2,
           rotSpeed: (Math.random() - 0.5) * 0.08,
-          color: isPetal ? '#FFFDF8' : (Math.random() > 0.5 ? '#F7E6B5' : '#E6CA85')
+          color: isPetal ? (Math.random() > 0.5 ? '#788C5C' : '#6F8351') : (Math.random() > 0.5 ? '#B88B42' : '#C59F63')
         });
       }
 
@@ -2904,12 +2907,12 @@
       if (!btn) return;
 
       const title = "Boda de Ruth Yaneth & Edson Mateo";
-      const details = "Acompáñanos a celebrar nuestra boda.\nCeremonia: Templo Compañía de Jesús (10:00 am)\nRecepción: Eventos Lufa (1:00 pm).";
+      const details = "Acompáñanos a celebrar nuestra boda.\nCeremonia: Templo Compañía de Jesús (9:30 am)\nRecepción: Eventos Lufa (1:00 pm).";
       const location = "Templo Compañía de Jesús, Plaza de Armas, Cusco";
-      const dates = "20261128T150000Z/20261129T030000Z";
+      const dates = "20261128T143000Z/20261129T030000Z";
 
-      // Tiempos exactos en milisegundos para Android Intent (28 Nov 2026 10:00 am a 10:00 pm Hora Perú UTC-5)
-      const beginTime = new Date('2026-11-28T10:00:00-05:00').getTime();
+      // Tiempos exactos en milisegundos para Android Intent (28 Nov 2026 9:30 am a 10:00 pm Hora Perú UTC-5)
+      const beginTime = new Date('2026-11-28T09:30:00-05:00').getTime();
       const endTime = new Date('2026-11-28T22:00:00-05:00').getTime();
 
       const encTitle = encodeURIComponent(title);
@@ -2941,9 +2944,9 @@
             'METHOD:PUBLISH',
             'BEGIN:VEVENT',
             'SUMMARY:Boda de Ruth Yaneth & Edson Mateo',
-            'DESCRIPTION:Acompáñanos a celebrar nuestra boda.\\nCeremonia: Templo Compañía de Jesús (10:00 am)\\nRecepción: Eventos Lufa (1:00 pm).',
+            'DESCRIPTION:Acompáñanos a celebrar nuestra boda.\\nCeremonia: Templo Compañía de Jesús (9:30 am)\\nRecepción: Eventos Lufa (1:00 pm).',
             'LOCATION:Templo Compañía de Jesús\\, Plaza de Armas\\, Cusco',
-            'DTSTART:20261128T150000Z',
+            'DTSTART:20261128T143000Z',
             'DTEND:20261129T030000Z',
             'STATUS:CONFIRMED',
             'SEQUENCE:0',
