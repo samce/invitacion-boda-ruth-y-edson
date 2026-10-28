@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NUESTRA BODA RUTH YANETH &amp; EDSON MATEO</title>
-  <meta name="description" content="Te hacemos la cordial invitación a nuestra boda y compartas con nosotros este maravilloso día. Sábado 28 de Noviembre." />
+  <title>NUESTRA BODA EDSON MATEO &amp; RUTH YANETH</title>
+  <meta name="description"
+    content="Te hacemos la cordial invitación a nuestra boda y compartas con nosotros este maravilloso día. Sábado 28 de Noviembre." />
 
   <!-- Google Fonts idénticas a la plantilla original de Canva -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Bebas+Neue&family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Montserrat:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Bebas+Neue&family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Montserrat:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,400;1,600&display=swap"
+    rel="stylesheet">
 
   <style>
     :root {
@@ -17,6 +21,7 @@
       --bg-card: #FAF9F5;
       --green-dark: #082315;
       --green-emerald: #0B331F;
+      --green-moss: #465B34;
       --gold-caramel: #B38B5A;
       --gold-deep: #966E3A;
       --text-main: #082315;
@@ -45,7 +50,7 @@
       width: 100%;
       max-width: 680px;
       background-color: #FAF8F4;
-      background-image: 
+      background-image:
         radial-gradient(circle at 50% 16%, rgba(132, 152, 104, 0.42) 0%, rgba(162, 181, 134, 0.20) 35%, transparent 68%),
         radial-gradient(circle at 85% 35%, rgba(141, 161, 114, 0.35) 0%, transparent 48%),
         radial-gradient(circle at 12% 48%, rgba(122, 141, 95, 0.30) 0%, transparent 45%),
@@ -63,9 +68,11 @@
         transform: translateX(-40px) scale(0.96);
         opacity: 0;
       }
+
       50% {
         opacity: 0.85;
       }
+
       100% {
         transform: translateX(0) scale(1);
         opacity: 1;
@@ -77,6 +84,7 @@
         transform: translateY(30px) translateX(-15px);
         opacity: 0;
       }
+
       100% {
         transform: translateY(0) translateX(0);
         opacity: 1;
@@ -88,10 +96,12 @@
         transform: scale(0.65) translateX(20px);
         opacity: 0;
       }
+
       70% {
         transform: scale(1.06) translateX(-3px);
         opacity: 1;
       }
+
       100% {
         transform: scale(1) translateX(0);
         opacity: 1;
@@ -99,23 +109,53 @@
     }
 
     @keyframes fadeLeft {
-      0% { transform: translateX(35px); opacity: 0; }
-      100% { transform: translateX(0); opacity: 1; }
+      0% {
+        transform: translateX(35px);
+        opacity: 0;
+      }
+
+      100% {
+        transform: translateX(0);
+        opacity: 1;
+      }
     }
 
     @keyframes fadeRight {
-      0% { transform: translateX(-35px); opacity: 0; }
-      100% { transform: translateX(0); opacity: 1; }
+      0% {
+        transform: translateX(-35px);
+        opacity: 0;
+      }
+
+      100% {
+        transform: translateX(0);
+        opacity: 1;
+      }
     }
 
     @keyframes panRight {
-      0% { transform: translateX(-30px); opacity: 0; }
-      100% { transform: translateX(0); opacity: 1; }
+      0% {
+        transform: translateX(-30px);
+        opacity: 0;
+      }
+
+      100% {
+        transform: translateX(0);
+        opacity: 1;
+      }
     }
 
     @keyframes pulseGlow {
-      0%, 100% { transform: scale(1); opacity: 0.9; }
-      50% { transform: scale(1.05); opacity: 1; }
+
+      0%,
+      100% {
+        transform: scale(1);
+        opacity: 0.9;
+      }
+
+      50% {
+        transform: scale(1.05);
+        opacity: 1;
+      }
     }
 
     @keyframes wreathBloom {
@@ -123,10 +163,12 @@
         opacity: 0;
         transform: scale(0.85);
       }
+
       60% {
         opacity: 0.95;
         transform: scale(1.03);
       }
+
       100% {
         opacity: 1;
         transform: scale(1);
@@ -135,19 +177,25 @@
 
     /* Animaciones continuas de respiración, resplandor y flotación para la sección principal */
     @keyframes gentleFloat {
-      0%, 100% {
+
+      0%,
+      100% {
         transform: translateY(0px) rotate(0deg);
       }
+
       50% {
         transform: translateY(-7px) rotate(0.8deg);
       }
     }
 
     @keyframes romanticPulse {
-      0%, 100% {
+
+      0%,
+      100% {
         transform: scale(1);
         opacity: 0.92;
       }
+
       50% {
         transform: scale(1.05);
         opacity: 1;
@@ -155,46 +203,61 @@
     }
 
     @keyframes goldGlowInfinite {
-      0%, 100% {
+
+      0%,
+      100% {
         filter: drop-shadow(0 0 0px rgba(179, 139, 90, 0));
       }
+
       50% {
         filter: drop-shadow(0 0 10px rgba(212, 175, 55, 0.45));
       }
     }
 
     @keyframes namesBreath {
-      0%, 100% {
+
+      0%,
+      100% {
         transform: scale(1);
       }
+
       50% {
         transform: scale(1.015);
       }
     }
 
     @keyframes swayFernLeft {
-      0%, 100% {
+
+      0%,
+      100% {
         transform: rotate(0deg) scale(1);
       }
+
       50% {
         transform: rotate(-3deg) scale(1.02);
       }
     }
 
     @keyframes swayFernRight {
-      0%, 100% {
+
+      0%,
+      100% {
         transform: scaleX(-1) rotate(0deg) scale(1);
       }
+
       50% {
         transform: scaleX(-1) rotate(-3deg) scale(1.02);
       }
     }
 
     @keyframes washAura {
-      0%, 100% {
+
+      0%,
+      100% {
         transform: translate(-50%, -50%) scale(1);
         opacity: 0.85;
       }
+
       50% {
         transform: translate(-50%, -50%) scale(1.06);
         opacity: 0.95;
@@ -204,31 +267,39 @@
     /* === ACTIVACIÓN DE ANIMACIONES AL ABRIR EL SOBRE CON CONTINUIDAD INFINITA === */
     body.invitation-revealed .title-nos-casamos {
       animation: riseRight 1.5s cubic-bezier(0.2, 0.8, 0.2, 1) forwards,
-                 goldGlowInfinite 4s ease-in-out 1.6s infinite;
+        goldGlowInfinite 4s ease-in-out 1.6s infinite;
     }
+
     body.invitation-revealed .names-novios {
       animation: driftRight 3.2s cubic-bezier(0.33, 1, 0.68, 1) 0.12s forwards,
-                 namesBreath 5s ease-in-out 3.4s infinite;
+        namesBreath 5s ease-in-out 3.4s infinite;
     }
+
     body.invitation-revealed .wreath-container {
       animation: wreathBloom 1.6s cubic-bezier(0.34, 1.56, 0.64, 1) 0.25s forwards,
-                 gentleFloat 5.5s ease-in-out 1.85s infinite;
+        gentleFloat 5.5s ease-in-out 1.85s infinite;
     }
+
     body.invitation-revealed .date-day-name {
       animation: fadeRight 1.5s cubic-bezier(0.25, 1, 0.5, 1) 0.25s forwards;
     }
+
     body.invitation-revealed .date-number-col {
       animation: riseRight 1.4s cubic-bezier(0.25, 1, 0.5, 1) 0.35s forwards;
     }
+
     body.invitation-revealed .date-month-name {
       animation: fadeLeft 1.5s cubic-bezier(0.25, 1, 0.5, 1) 0.25s forwards;
     }
+
     body.invitation-revealed .title-ya-falta-poco {
       animation: popLeft 1.5s cubic-bezier(0.34, 1.56, 0.64, 1) 0.5s forwards;
     }
+
     body.invitation-revealed .countdown-timer-box {
       animation: riseRight 1.4s ease-out 0.65s forwards;
     }
+
     body.invitation-revealed .blessing-title-script {
       animation: panRight 1.6s ease-out 0.8s forwards;
     }
@@ -252,10 +323,12 @@
       box-shadow: 0 8px 24px rgba(2, 54, 43, 0.4);
       transition: all 0.3s ease;
     }
+
     .audio-player-btn:hover {
       transform: scale(1.1);
       box-shadow: 0 10px 28px rgba(179, 139, 90, 0.5);
     }
+
     .audio-player-btn.playing {
       animation: pulseGlow 2s infinite ease-in-out;
     }
@@ -270,6 +343,7 @@
       position: relative;
       z-index: 3;
     }
+
     .inline-player-btn {
       background: var(--green-dark);
       color: #FAF8F4;
@@ -282,20 +356,25 @@
       box-shadow: 0 4px 12px rgba(2, 54, 43, 0.25);
       transition: all 0.25s ease;
     }
+
     .inline-player-btn:hover {
       transform: scale(1.08);
       box-shadow: 0 6px 16px rgba(179, 139, 90, 0.45);
       border-color: #E6CA85;
     }
-    .inline-btn-prev, .inline-btn-next {
+
+    .inline-btn-prev,
+    .inline-btn-next {
       width: 38px;
       height: 38px;
       opacity: 0.92;
     }
+
     .inline-btn-play {
       width: 50px;
       height: 50px;
     }
+
     .inline-btn-play.playing {
       animation: pulseGlow 2.5s infinite;
       border-color: #E6CA85;
@@ -444,6 +523,7 @@
       position: relative;
       z-index: 3;
     }
+
     .green-line-sep::before,
     .green-line-sep::after {
       content: '';
@@ -452,6 +532,7 @@
       background: var(--green-dark);
       border-radius: 50%;
     }
+
     .green-line-bar {
       flex: 1;
       height: 1.8px;
@@ -472,14 +553,14 @@
       opacity: 0;
     }
 
-    /* Nombres: Ruth Yaneth & Edson Mateo en una sola línea continua */
+    /* Nombres: Edson Mateo & Ruth Yaneth en una sola línea continua */
     .names-novios {
       font-family: 'Alex Brush', cursive;
       font-size: clamp(1.85rem, 6.8vw, 3.8rem);
-      color: var(--green-dark);
+      color: var(--green-moss, #465B34);
       line-height: 1.25;
       margin-bottom: 20px;
-      text-shadow: 0 2px 10px rgba(8, 35, 21, 0.12);
+      text-shadow: 0 2px 10px rgba(70, 91, 52, 0.15);
       position: relative;
       z-index: 3;
       padding: 0 8px;
@@ -502,6 +583,7 @@
       justify-content: center;
       opacity: 0;
     }
+
     .wreath-circle-img {
       position: absolute;
       top: 0;
@@ -513,6 +595,7 @@
       z-index: 2;
       pointer-events: none;
     }
+
     .wreath-couple-img {
       position: relative;
       width: 110px;
@@ -804,10 +887,12 @@
       cursor: pointer;
       transition: transform 0.2s ease, filter 0.2s ease;
     }
+
     .btn-brush-gold:hover {
       transform: scale(1.04);
       filter: brightness(1.06);
     }
+
     .btn-brush-gold svg {
       width: 14px;
       height: 14px;
@@ -1000,6 +1085,7 @@
       letter-spacing: 0.5px;
       transition: background 0.2s;
     }
+
     .btn-copy-tag:hover {
       background: var(--green-dark);
     }
@@ -1199,6 +1285,7 @@
       box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
       transition: all 0.25s ease;
     }
+
     .btn-whatsapp-canva:hover {
       background: #1eb954;
       transform: scale(1.04);
@@ -1241,13 +1328,14 @@
       font-size: 0.88rem;
       font-family: 'Montserrat', sans-serif;
       font-weight: 600;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
       opacity: 0;
       pointer-events: none;
       transition: all 0.3s ease;
       z-index: 9999;
       border: 1.5px solid var(--gold-caramel);
     }
+
     #copy-toast.show {
       transform: translateX(-50%) translateY(0);
       opacity: 1;
@@ -1263,7 +1351,7 @@
       width: 100vw;
       height: 100vh;
       background-color: #FFFFFF;
-      background-image: 
+      background-image:
         radial-gradient(circle at 50% 38%, #FFFFFF 0%, #FAFAF8 65%, #F4F2EC 100%),
         radial-gradient(circle at 15% 15%, rgba(218, 178, 108, 0.14) 0%, transparent 45%),
         radial-gradient(circle at 85% 15%, rgba(218, 178, 108, 0.14) 0%, transparent 45%),
@@ -1276,6 +1364,7 @@
       transition: opacity 0.85s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.85s;
       overflow: hidden;
     }
+
     .envelope-overlay.opened {
       opacity: 0;
       visibility: hidden;
@@ -1292,18 +1381,21 @@
       filter: drop-shadow(0 6px 18px rgba(65, 80, 48, 0.25));
       transition: opacity 0.5s ease;
     }
+
     .env-corner-tl {
       top: -15px;
       left: -15px;
       transform-origin: top left;
       animation: cornerBreatheTl 6s ease-in-out infinite;
     }
+
     .env-corner-tr {
       top: -15px;
       right: -15px;
       transform-origin: 50% 50%;
       animation: cornerBreatheTr 6s ease-in-out infinite;
     }
+
     .env-corner-eucalyptus img {
       width: 100%;
       height: auto;
@@ -1311,12 +1403,27 @@
     }
 
     @keyframes cornerBreatheTl {
-      0%, 100% { transform: scale(1) rotate(0deg); }
-      50% { transform: scale(1.04) rotate(1.5deg); }
+
+      0%,
+      100% {
+        transform: scale(1) rotate(0deg);
+      }
+
+      50% {
+        transform: scale(1.04) rotate(1.5deg);
+      }
     }
+
     @keyframes cornerBreatheTr {
-      0%, 100% { transform: scaleX(-1) rotate(0deg); }
-      50% { transform: scaleX(-1) scale(1.04) rotate(-1.5deg); }
+
+      0%,
+      100% {
+        transform: scaleX(-1) rotate(0deg);
+      }
+
+      50% {
+        transform: scaleX(-1) scale(1.04) rotate(-1.5deg);
+      }
     }
 
     .envelope-wrapper {
@@ -1344,9 +1451,19 @@
       z-index: 0;
       animation: goldAuraPulse 4s ease-in-out infinite;
     }
+
     @keyframes goldAuraPulse {
-      0%, 100% { transform: translate(-50%, -50%) scale(0.96); opacity: 0.75; }
-      50% { transform: translate(-50%, -50%) scale(1.08); opacity: 1; }
+
+      0%,
+      100% {
+        transform: translate(-50%, -50%) scale(0.96);
+        opacity: 0.75;
+      }
+
+      50% {
+        transform: translate(-50%, -50%) scale(1.08);
+        opacity: 1;
+      }
     }
 
     /* Sobre Verde Musgo */
@@ -1364,6 +1481,7 @@
       transition: transform 0.3s ease, box-shadow 0.3s ease;
       z-index: 1;
     }
+
     .envelope-box:hover {
       transform: translateY(-4px);
       box-shadow: 0 28px 60px rgba(55, 70, 38, 0.45), 0 10px 25px rgba(0, 0, 0, 0.16), 0 0 45px rgba(230, 202, 133, 0.55);
@@ -1384,6 +1502,7 @@
       z-index: 5;
       filter: drop-shadow(0 5px 8px rgba(35, 45, 25, 0.35));
     }
+
     .envelope-box.is-open .envelope-flap {
       transform: rotateX(180deg);
       z-index: 1;
@@ -1420,10 +1539,11 @@
       align-items: center;
       justify-content: center;
       padding: 10px;
-      box-shadow: 0 4px 14px rgba(0,0,0,0.14);
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.14);
       z-index: 2;
       transition: transform 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
     }
+
     .envelope-box.is-open .envelope-card-peek {
       transform: translateY(-55px);
     }
@@ -1435,6 +1555,7 @@
       color: #8C6F3B;
       letter-spacing: 2px;
     }
+
     .peek-title {
       font-family: 'Alex Brush', cursive;
       font-size: 2.1rem;
@@ -1442,6 +1563,7 @@
       line-height: 1;
       margin: 2px 0;
     }
+
     .peek-date {
       font-family: 'Montserrat', sans-serif;
       font-size: 0.68rem;
@@ -1460,7 +1582,7 @@
       height: 64px;
       background: radial-gradient(circle at 35% 35%, #F5DE9E 0%, #D8AB64 45%, #9E7434 85%, #6B4918 100%);
       border-radius: 50%;
-      box-shadow: 0 6px 18px rgba(0,0,0,0.35), 0 0 20px rgba(230, 202, 133, 0.6), inset 0 2px 3px rgba(255,255,255,0.6), inset 0 -2px 4px rgba(0,0,0,0.4);
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35), 0 0 20px rgba(230, 202, 133, 0.6), inset 0 2px 3px rgba(255, 255, 255, 0.6), inset 0 -2px 4px rgba(0, 0, 0, 0.4);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -1469,9 +1591,11 @@
       z-index: 10;
       transition: transform 0.2s ease;
     }
+
     .wax-seal:hover {
       transform: scale(1.1);
     }
+
     .wax-seal-inner {
       width: 50px;
       height: 50px;
@@ -1484,23 +1608,28 @@
       font-size: 0.95rem;
       font-weight: 800;
       color: #2b1802;
-      text-shadow: 0 1px 1px rgba(255,255,255,0.5);
+      text-shadow: 0 1px 1px rgba(255, 255, 255, 0.5);
       letter-spacing: 0.5px;
       white-space: nowrap;
       line-height: 1;
     }
+
     .wax-seal-inner span {
       white-space: nowrap;
       display: inline-block;
       line-height: 1;
     }
+
     @keyframes sealPulseGlow {
-      0%, 100% {
-        box-shadow: 0 6px 18px rgba(0,0,0,0.35), 0 0 16px rgba(230, 202, 133, 0.45);
+
+      0%,
+      100% {
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35), 0 0 16px rgba(230, 202, 133, 0.45);
         transform: scale(1);
       }
+
       50% {
-        box-shadow: 0 8px 24px rgba(0,0,0,0.45), 0 0 28px rgba(230, 202, 133, 0.8);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45), 0 0 28px rgba(230, 202, 133, 0.8);
         transform: scale(1.05);
       }
     }
@@ -1510,6 +1639,7 @@
       color: #24351E;
       margin-top: 8px;
     }
+
     .envelope-guest-badge {
       font-family: 'Montserrat', sans-serif;
       font-size: 0.82rem;
@@ -1520,13 +1650,14 @@
       font-weight: 700;
       text-shadow: 0 1px 6px rgba(218, 178, 108, 0.35);
     }
+
     .envelope-names {
       font-family: 'Alex Brush', cursive;
       font-size: clamp(2rem, 7vw, 3.4rem);
-      color: #082315;
+      color: var(--green-moss, #465B34);
       line-height: 1.15;
       margin-bottom: 4px;
-      text-shadow: 0 2px 8px rgba(8, 35, 21, 0.15);
+      text-shadow: 0 2px 8px rgba(70, 91, 52, 0.18);
       white-space: nowrap;
       text-align: center;
       width: 100%;
@@ -1542,25 +1673,38 @@
       width: 100%;
       max-width: 240px;
     }
+
     .env-gold-flourish .flourish-line {
       flex: 1;
       height: 1px;
       background: linear-gradient(to right, transparent, rgba(184, 145, 80, 0.75), transparent);
     }
+
     .env-gold-flourish svg {
       filter: drop-shadow(0 0 5px rgba(218, 178, 108, 0.5));
       animation: ringsPulse 3s ease-in-out infinite;
     }
+
     @keyframes ringsPulse {
-      0%, 100% { transform: scale(1); filter: drop-shadow(0 0 4px rgba(218, 178, 108, 0.4)); }
-      50% { transform: scale(1.12); filter: drop-shadow(0 0 10px rgba(245, 222, 158, 0.95)); }
+
+      0%,
+      100% {
+        transform: scale(1);
+        filter: drop-shadow(0 0 4px rgba(218, 178, 108, 0.4));
+      }
+
+      50% {
+        transform: scale(1.12);
+        filter: drop-shadow(0 0 10px rgba(245, 222, 158, 0.95));
+      }
     }
 
     .envelope-date-preview {
       font-family: 'Cormorant Garamond', serif;
       font-size: 1.3rem;
       font-style: italic;
-      color: #556649;
+      font-weight: 700;
+      color: #3b4c30;
       margin-bottom: 22px;
       text-shadow: none;
     }
@@ -1584,6 +1728,7 @@
       position: relative;
       overflow: hidden;
     }
+
     .btn-open-envelope::after {
       content: '';
       position: absolute;
@@ -1591,14 +1736,22 @@
       left: -60%;
       width: 40%;
       height: 200%;
-      background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.6) 50%, rgba(255,255,255,0) 100%);
+      background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.6) 50%, rgba(255, 255, 255, 0) 100%);
       transform: rotate(30deg);
       animation: buttonShine 3.5s infinite;
     }
+
     @keyframes buttonShine {
-      0% { left: -60%; }
-      35%, 100% { left: 140%; }
+      0% {
+        left: -60%;
+      }
+
+      35%,
+      100% {
+        left: 140%;
+      }
     }
+
     .btn-open-envelope:hover {
       transform: translateY(-2px) scale(1.04);
       box-shadow: 0 12px 35px rgba(218, 178, 108, 0.6);
@@ -1618,6 +1771,7 @@
       margin-right: auto;
       transition: color 0.2s ease;
     }
+
     .btn-skip-envelope:hover {
       color: #24351E;
     }
@@ -1645,6 +1799,7 @@
       box-shadow: 0 4px 18px rgba(179, 139, 90, 0.15);
       animation: riseRight 1s ease-out;
     }
+
     .vip-guest-label {
       font-family: 'Montserrat', sans-serif;
       font-size: 0.72rem;
@@ -1654,6 +1809,7 @@
       font-weight: 700;
       margin-bottom: 4px;
     }
+
     .vip-guest-name {
       font-family: 'Playfair Display', serif;
       font-size: 1.45rem;
@@ -1661,6 +1817,7 @@
       color: var(--green-dark);
       margin-bottom: 4px;
     }
+
     .vip-guest-sub {
       font-family: 'Cormorant Garamond', serif;
       font-style: italic;
@@ -1673,6 +1830,7 @@
       margin: 22px auto 0;
       text-align: center;
     }
+
     .btn-calendar-gold {
       display: inline-flex;
       align-items: center;
@@ -1693,12 +1851,14 @@
       transition: all 0.25s ease;
       cursor: pointer;
     }
+
     .btn-calendar-gold:hover {
       background: var(--gold-caramel);
       color: #ffffff;
       transform: translateY(-2px);
       box-shadow: 0 6px 18px rgba(179, 139, 90, 0.35);
     }
+
     .btn-calendar-gold:hover {
       background: var(--gold-caramel);
       color: #ffffff;
@@ -1715,6 +1875,7 @@
       flex-wrap: wrap;
       margin-top: 14px;
     }
+
     .btn-map-action {
       display: inline-flex;
       align-items: center;
@@ -1727,23 +1888,27 @@
       letter-spacing: 0.5px;
       text-decoration: none;
       transition: all 0.25s ease;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     }
+
     .btn-map-google {
       background: var(--green-dark);
       color: #ffffff;
       border: 1px solid var(--green-emerald);
     }
+
     .btn-map-google:hover {
       background: var(--green-emerald);
       transform: translateY(-2px);
       box-shadow: 0 6px 16px rgba(2, 54, 43, 0.3);
     }
+
     .btn-map-waze {
       background: #FAF7F0;
       color: #1F363D;
       border: 1.5px solid var(--gold-caramel);
     }
+
     .btn-map-waze:hover {
       background: #EFE8DC;
       transform: translateY(-2px);
@@ -1759,6 +1924,7 @@
       border-radius: 12px;
       padding: 16px 20px;
     }
+
     .palette-section-title {
       font-family: 'Playfair Display', serif;
       font-weight: 700;
@@ -1766,6 +1932,7 @@
       color: #000000;
       margin-bottom: 10px;
     }
+
     .palette-swatches-row {
       display: flex;
       align-items: center;
@@ -1774,29 +1941,34 @@
       margin-bottom: 10px;
       flex-wrap: wrap;
     }
+
     .swatch-item {
       display: flex;
       flex-direction: column;
       align-items: center;
       gap: 4px;
     }
+
     .swatch-circle {
       width: 34px;
       height: 34px;
       border-radius: 50%;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
       border: 2px solid #ffffff;
       position: relative;
     }
+
     .swatch-label {
       font-family: 'Montserrat', sans-serif;
       font-size: 0.65rem;
       color: #555;
       font-weight: 600;
     }
+
     .swatch-forbidden {
       border: 2px solid #b3261e;
     }
+
     .swatch-forbidden::after {
       content: '✕';
       position: absolute;
@@ -1807,6 +1979,7 @@
       font-weight: 900;
       font-size: 0.95rem;
     }
+
     .forbidden-note {
       font-family: 'Montserrat', sans-serif;
       font-size: 0.78rem;
@@ -1832,14 +2005,17 @@
       transition: all 0.3s ease;
       gap: 10px;
     }
+
     .music-widget-floating:hover {
       transform: scale(1.05);
       box-shadow: 0 10px 28px rgba(179, 139, 90, 0.55);
     }
+
     .music-widget-floating.playing {
       border-color: #E6CA85;
       animation: pulseGlow 2.5s infinite;
     }
+
     .music-disc-icon {
       width: 36px;
       height: 36px;
@@ -1851,19 +2027,28 @@
       color: #ffffff;
       position: relative;
     }
+
     .music-widget-floating.playing .music-disc-icon {
       animation: spinDisc 4s linear infinite;
     }
+
     @keyframes spinDisc {
-      from { transform: rotate(0deg); }
-      to { transform: rotate(360deg); }
+      from {
+        transform: rotate(0deg);
+      }
+
+      to {
+        transform: rotate(360deg);
+      }
     }
+
     .equalizer-bars {
       display: flex;
       align-items: flex-end;
       gap: 3px;
       height: 16px;
     }
+
     .eq-bar {
       width: 3px;
       background: #E6CA85;
@@ -1871,14 +2056,35 @@
       height: 4px;
       transition: height 0.2s ease;
     }
-    .music-widget-floating.playing .eq-bar:nth-child(1) { animation: bounceEq 0.9s infinite ease-in-out; }
-    .music-widget-floating.playing .eq-bar:nth-child(2) { animation: bounceEq 1.2s infinite ease-in-out 0.2s; }
-    .music-widget-floating.playing .eq-bar:nth-child(3) { animation: bounceEq 0.8s infinite ease-in-out 0.4s; }
-    .music-widget-floating.playing .eq-bar:nth-child(4) { animation: bounceEq 1.1s infinite ease-in-out 0.1s; }
-    @keyframes bounceEq {
-      0%, 100% { height: 4px; }
-      50% { height: 16px; }
+
+    .music-widget-floating.playing .eq-bar:nth-child(1) {
+      animation: bounceEq 0.9s infinite ease-in-out;
     }
+
+    .music-widget-floating.playing .eq-bar:nth-child(2) {
+      animation: bounceEq 1.2s infinite ease-in-out 0.2s;
+    }
+
+    .music-widget-floating.playing .eq-bar:nth-child(3) {
+      animation: bounceEq 0.8s infinite ease-in-out 0.4s;
+    }
+
+    .music-widget-floating.playing .eq-bar:nth-child(4) {
+      animation: bounceEq 1.1s infinite ease-in-out 0.1s;
+    }
+
+    @keyframes bounceEq {
+
+      0%,
+      100% {
+        height: 4px;
+      }
+
+      50% {
+        height: 16px;
+      }
+    }
+
     .music-widget-text {
       font-family: 'Montserrat', sans-serif;
       font-size: 0.75rem;
@@ -1889,37 +2095,43 @@
     }
 
     @media (max-width: 480px) {
-      .envelope-box { 
-        width: 280px; 
-        height: 185px; 
+      .envelope-box {
+        width: 280px;
+        height: 185px;
         margin-bottom: 18px;
       }
-      .envelope-flap { 
-        border-left-width: 140px; 
-        border-right-width: 140px; 
-        border-top-width: 100px; 
+
+      .envelope-flap {
+        border-left-width: 140px;
+        border-right-width: 140px;
+        border-top-width: 100px;
       }
-      .envelope-pocket { 
-        border-left-width: 140px; 
-        border-right-width: 140px; 
-        border-bottom-width: 96px; 
-        border-top-width: 82px; 
+
+      .envelope-pocket {
+        border-left-width: 140px;
+        border-right-width: 140px;
+        border-bottom-width: 96px;
+        border-top-width: 82px;
       }
+
       .envelope-card-peek {
         top: 12px;
         left: 15px;
         right: 15px;
         bottom: 12px;
       }
+
       .envelope-box.is-open .envelope-card-peek {
         transform: translateY(-46px);
       }
+
       .wax-seal {
         top: -126px;
         left: -29px;
         width: 58px;
         height: 58px;
       }
+
       .wax-seal-inner {
         width: 46px;
         height: 46px;
@@ -1927,60 +2139,129 @@
         letter-spacing: 0.5px;
         white-space: nowrap;
       }
+
       .env-gold-glow {
         width: 320px;
         height: 240px;
         top: 90px;
       }
+
       .env-corner-eucalyptus {
         width: clamp(120px, 30vw, 160px);
       }
-      .envelope-names { font-size: clamp(1.4rem, 5.6vw, 2.2rem); white-space: nowrap; }
-      .leaf-corner-tl, .leaf-corner-tr { width: 140px; }
-      .names-novios { font-size: clamp(1.75rem, 6.4vw, 2.5rem); white-space: nowrap; }
-      .title-nos-casamos { font-size: 2.8rem; }
+
+      .envelope-names {
+        font-size: clamp(1.4rem, 5.6vw, 2.2rem);
+        white-space: nowrap;
+      }
+
+      .leaf-corner-tl,
+      .leaf-corner-tr {
+        width: 140px;
+      }
+
+      .names-novios {
+        font-size: clamp(1.75rem, 6.4vw, 2.5rem);
+        white-space: nowrap;
+      }
+
+      .title-nos-casamos {
+        font-size: 2.8rem;
+      }
+
       .date-layout {
         gap: 8px;
         padding: 0 4px;
         max-width: 100%;
       }
-      .date-day-name, .date-month-name { 
-        font-size: clamp(1.6rem, 5.8vw, 2.2rem); 
+
+      .date-day-name,
+      .date-month-name {
+        font-size: clamp(1.6rem, 5.8vw, 2.2rem);
       }
-      .date-number-col { 
-        padding: 0 8px; 
-        min-width: 68px; 
+
+      .date-number-col {
+        padding: 0 8px;
+        min-width: 68px;
       }
-      .date-number { 
-        font-size: clamp(2.4rem, 8.5vw, 3rem); 
+
+      .date-number {
+        font-size: clamp(2.4rem, 8.5vw, 3rem);
       }
+
       .date-fern-left {
         width: 65px;
         left: -18px;
         top: -25px;
         opacity: 0.22;
       }
+
       .date-rose-right {
         width: 75px;
         right: -18px;
         top: -30px;
         opacity: 0.18;
       }
-      .countdown-digits { font-size: 3rem; gap: 4px; }
-      .parents-columns-grid { grid-template-columns: 1fr; gap: 16px; }
-      .timeline-vertical-flow::before { left: 110px; }
-      .timeline-row-item { grid-template-columns: 95px 30px 1fr; }
-      .timeline-icon-col { width: 95px; }
-      .timeline-icon-col img { max-width: 38px; max-height: 38px; }
-      .timeline-icons-duo img { max-width: 28px; max-height: 28px; }
-      .timeline-desc-text { font-size: 0.78rem; }
-      .btn-brush-gold { min-width: 220px; font-size: 1rem; padding: 12px 30px; }
-      .dos-personas-script, .pase-para-script { font-size: 2.7rem; }
-      .scroll-banner-wrapper { padding: 18px 25px; min-height: 90px; }
-      .scroll-banner-text { font-size: 0.76rem; }
+
+      .countdown-digits {
+        font-size: 3rem;
+        gap: 4px;
+      }
+
+      .parents-columns-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+
+      .timeline-vertical-flow::before {
+        left: 110px;
+      }
+
+      .timeline-row-item {
+        grid-template-columns: 95px 30px 1fr;
+      }
+
+      .timeline-icon-col {
+        width: 95px;
+      }
+
+      .timeline-icon-col img {
+        max-width: 38px;
+        max-height: 38px;
+      }
+
+      .timeline-icons-duo img {
+        max-width: 28px;
+        max-height: 28px;
+      }
+
+      .timeline-desc-text {
+        font-size: 0.78rem;
+      }
+
+      .btn-brush-gold {
+        min-width: 220px;
+        font-size: 1rem;
+        padding: 12px 30px;
+      }
+
+      .dos-personas-script,
+      .pase-para-script {
+        font-size: 2.7rem;
+      }
+
+      .scroll-banner-wrapper {
+        padding: 18px 25px;
+        min-height: 90px;
+      }
+
+      .scroll-banner-text {
+        font-size: 0.76rem;
+      }
     }
   </style>
 </head>
+
 <body>
 
   <!-- Canvas de partículas doradas y pétalos -->
@@ -2003,30 +2284,30 @@
         <div class="envelope-flap" id="envelope-flap">
           <div class="wax-seal" id="wax-seal" title="Toca para abrir">
             <div class="wax-seal-inner">
-              <span>Y&nbsp;&amp;&nbsp;E</span>
+              <span>E&nbsp;&amp;&nbsp;Y</span>
             </div>
           </div>
         </div>
         <div class="envelope-pocket"></div>
         <div class="envelope-card-peek">
-          <div class="peek-monogram">Y &amp; E</div>
+          <div class="peek-monogram">E &amp; Y</div>
           <div class="peek-title">Nuestra Boda</div>
           <div class="peek-date">28 · Noviembre · 2026</div>
         </div>
       </div>
       <div class="envelope-invite-meta">
         <p class="envelope-guest-badge" id="env-guest-text">Invitación Especial</p>
-        <h2 class="envelope-names">Ruth Yaneth &amp; Edson Mateo</h2>
+        <h2 class="envelope-names">Edson Mateo &amp; Ruth Yaneth</h2>
         <!-- Detalle nupcial: Alianzas y línea dorada -->
         <div class="env-gold-flourish">
           <span class="flourish-line"></span>
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#E6CA85" stroke-width="1.8">
-            <circle cx="9" cy="12" r="5.5"/>
-            <circle cx="15" cy="12" r="5.5"/>
+            <circle cx="9" cy="12" r="5.5" />
+            <circle cx="15" cy="12" r="5.5" />
           </svg>
           <span class="flourish-line"></span>
         </div>
-        <p class="envelope-date-preview">Sábado, 28 de Noviembre de 2026 · 9:30 am</p>
+        <p class="envelope-date-preview"><strong>Sábado, 28 de Noviembre de 2026 · 9:30 am</strong></p>
         <button id="open-envelope-btn" class="btn-open-envelope">
           ✨ Abrir Invitación
         </button>
@@ -2046,7 +2327,7 @@
   <div id="music-widget" class="music-widget-floating" title="Reproducir / Pausar Música">
     <div class="music-disc-icon">
       <svg id="music-disc-svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-        <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/>
+        <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z" />
       </svg>
     </div>
     <div class="equalizer-bars">
@@ -2084,7 +2365,8 @@
 
       <!-- Cita romántica -->
       <p class="quote-text">
-        “En el eco de nuestras risas, descubrimos que no hay mayor dicha que compartir la alegría y sentir cómo nuestras almas se encuentran en la suave melodía de nuestra compañía”.
+        “En el eco de nuestras risas, descubrimos que no hay mayor dicha que compartir la alegría y sentir cómo nuestras
+        almas se encuentran en la suave melodía de nuestra compañía”.
       </p>
 
       <!-- Texto de invitación -->
@@ -2100,8 +2382,8 @@
       <!-- Título Nos Casamos con animación rise-RIGHT -->
       <h2 class="title-nos-casamos">Nos Casamos</h2>
 
-      <!-- Nombres Ruth Yaneth & Edson Mateo con animación drift-RIGHT de 4s -->
-      <h1 class="names-novios">Ruth Yaneth &amp; Edson Mateo</h1>
+      <!-- Nombres Edson Mateo & Ruth Yaneth con animación drift-RIGHT de 4s -->
+      <h1 class="names-novios">Edson Mateo &amp; Ruth Yaneth</h1>
 
       <!-- Doble aro dorado con silueta de novios y acuarela de fondo -->
       <div class="wreath-container">
@@ -2114,20 +2396,21 @@
       <div class="inline-audio-player">
         <button class="inline-player-btn inline-btn-prev" id="inline-prev-btn" title="Anterior">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"/>
+            <path d="M6 6h2v12H6zm3.5 6l8.5 6V6z" />
           </svg>
         </button>
         <button class="inline-player-btn inline-btn-play" id="inline-play-btn" title="Reproducir / Pausar Música">
           <svg id="inline-play-icon" width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M8 5v14l11-7z"/>
+            <path d="M8 5v14l11-7z" />
           </svg>
-          <svg id="inline-pause-icon" width="22" height="22" viewBox="0 0 24 24" fill="currentColor" style="display:none;">
-            <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
+          <svg id="inline-pause-icon" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"
+            style="display:none;">
+            <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" />
           </svg>
         </button>
         <button class="inline-player-btn inline-btn-next" id="inline-next-btn" title="Siguiente">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z"/>
+            <path d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z" />
           </svg>
         </button>
       </div>
@@ -2170,9 +2453,12 @@
 
       <!-- Botón Agregar a Calendario -->
       <div class="calendar-add-wrapper">
-        <a id="btn-add-calendar" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Boda+de+Ruth+Yaneth+%26+Edson+Mateo&dates=20261128T143000Z/20261129T030000Z&details=Acomp%C3%A1%C3%B1anos+a+celebrar+nuestra+boda.+Ceremonia:+Templo+Compa%C3%B1%C3%ADa+de+Jes%C3%BAs+(9:30+am).+Recepci%C3%B3n:+Eventos+Lufa+(1:00+pm).&location=Templo+Compa%C3%B1%C3%ADa+de+Jes%C3%BAs,+Plaza+de+Armas,+Cusco" target="_blank" rel="noopener noreferrer" class="btn-calendar-gold" title="Añadir a Google Calendar">
+        <a id="btn-add-calendar"
+          href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Boda+de+Edson+Mateo+%26+Ruth+Yaneth&dates=20261128T143000Z/20261129T030000Z&details=Acomp%C3%A1%C3%B1anos+a+celebrar+nuestra+boda.+Ceremonia:+Templo+Compa%C3%B1%C3%ADa+de+Jes%C3%BAs+(9:30+am).+Recepci%C3%B3n:+Eventos+Lufa+(1:00+pm).&location=Templo+Compa%C3%B1%C3%ADa+de+Jes%C3%BAs,+Plaza+de+Armas,+Cusco"
+          target="_blank" rel="noopener noreferrer" class="btn-calendar-gold" title="Añadir a Google Calendar">
           <svg class="calendar-icon-svg" viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
-            <path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20a2 2 0 002 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11zM7 11h5v5H7z"/>
+            <path
+              d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20a2 2 0 002 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11zM7 11h5v5H7z" />
           </svg>
           Agendar en mi Calendario
         </a>
@@ -2185,14 +2471,14 @@
 
       <div class="parents-columns-grid">
         <div>
-          <div class="parent-role-header">Padres de la Novia:</div>
-          <div class="parent-name-line">Marcelo Chilo Umasi</div>
-          <div class="parent-name-line">Gregoria Alvares Caceres</div>
-        </div>
-        <div>
           <div class="parent-role-header">Padres del Novio:</div>
           <div class="parent-name-line">Mateo Cayo Atayupanqui</div>
           <div class="parent-name-line">Asunta Mancilla Escobar</div>
+        </div>
+        <div>
+          <div class="parent-role-header">Padres de la Novia:</div>
+          <div class="parent-name-line">Marcelo Chilo Umasi</div>
+          <div class="parent-name-line">Gregoria Alvarez Caceres</div>
         </div>
       </div>
 
@@ -2223,12 +2509,21 @@
         <div class="venue-place-name">Templo Compañía de Jesús – Plaza de Armas Cusco</div>
         <div class="venue-hour-tag">9:30 am</div>
         <div class="venue-buttons-dual">
-          <a href="https://www.google.com/maps/search/?api=1&query=Templo+de+la+Compa%C3%B1ia+de+Jes%C3%BAs+Plaza+de+Armas+Cusco" target="_blank" rel="noopener noreferrer" class="btn-map-action btn-map-google" title="Abrir en Google Maps">
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
+          <a href="https://www.google.com/maps/search/?api=1&query=Templo+de+la+Compa%C3%B1ia+de+Jes%C3%BAs+Plaza+de+Armas+Cusco"
+            target="_blank" rel="noopener noreferrer" class="btn-map-action btn-map-google"
+            title="Abrir en Google Maps">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z" />
+            </svg>
             Google Maps
           </a>
-          <a href="https://waze.com/ul?q=Templo+de+la+Compania+de+Jesus+Plaza+de+Armas+Cusco" target="_blank" rel="noopener noreferrer" class="btn-map-action btn-map-waze" title="Abrir en Waze">
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 1010 10A10 10 0 0012 2zm1 14.5a1.5 1.5 0 11-1.5-1.5 1.5 1.5 0 011.5 1.5zm-5-1a1.5 1.5 0 111.5-1.5 1.5 1.5 0 01-1.5 1.5zm8.5-5.5a4.5 4.5 0 01-4.5 4.5H10a4.5 4.5 0 01-4.5-4.5c0-2.5 2-4.5 4.5-4.5h2a4.5 4.5 0 014.5 4.5z"/></svg>
+          <a href="https://waze.com/ul?q=Templo+de+la+Compania+de+Jesus+Plaza+de+Armas+Cusco" target="_blank"
+            rel="noopener noreferrer" class="btn-map-action btn-map-waze" title="Abrir en Waze">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 2a10 10 0 1010 10A10 10 0 0012 2zm1 14.5a1.5 1.5 0 11-1.5-1.5 1.5 1.5 0 011.5 1.5zm-5-1a1.5 1.5 0 111.5-1.5 1.5 1.5 0 01-1.5 1.5zm8.5-5.5a4.5 4.5 0 01-4.5 4.5H10a4.5 4.5 0 01-4.5-4.5c0-2.5 2-4.5 4.5-4.5h2a4.5 4.5 0 014.5 4.5z" />
+            </svg>
             Waze
           </a>
         </div>
@@ -2240,12 +2535,21 @@
         <div class="venue-place-name">Eventos Lufa – Av. Manco Cápac N° 167, San Jerónimo - Cusco</div>
         <div class="venue-hour-tag">1:00 pm</div>
         <div class="venue-buttons-dual">
-          <a href="https://www.google.com/maps/search/?api=1&query=Eventos+Lufa+Av.+Manco+C%C3%A1pac+167+San+Jer%C3%B3nimo+Cusco" target="_blank" rel="noopener noreferrer" class="btn-map-action btn-map-google" title="Abrir en Google Maps">
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
+          <a href="https://www.google.com/maps/search/?api=1&query=Eventos+Lufa+Av.+Manco+C%C3%A1pac+167+San+Jer%C3%B3nimo+Cusco"
+            target="_blank" rel="noopener noreferrer" class="btn-map-action btn-map-google"
+            title="Abrir en Google Maps">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z" />
+            </svg>
             Google Maps
           </a>
-          <a href="https://waze.com/ul?q=Eventos+Lufa+San+Jeronimo+Cusco" target="_blank" rel="noopener noreferrer" class="btn-map-action btn-map-waze" title="Abrir en Waze">
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 1010 10A10 10 0 0012 2zm1 14.5a1.5 1.5 0 11-1.5-1.5 1.5 1.5 0 011.5 1.5zm-5-1a1.5 1.5 0 111.5-1.5 1.5 1.5 0 01-1.5 1.5zm8.5-5.5a4.5 4.5 0 01-4.5 4.5H10a4.5 4.5 0 01-4.5-4.5c0-2.5 2-4.5 4.5-4.5h2a4.5 4.5 0 014.5 4.5z"/></svg>
+          <a href="https://waze.com/ul?q=Eventos+Lufa+San+Jeronimo+Cusco" target="_blank" rel="noopener noreferrer"
+            class="btn-map-action btn-map-waze" title="Abrir en Waze">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 2a10 10 0 1010 10A10 10 0 0012 2zm1 14.5a1.5 1.5 0 11-1.5-1.5 1.5 1.5 0 011.5 1.5zm-5-1a1.5 1.5 0 111.5-1.5 1.5 1.5 0 01-1.5 1.5zm8.5-5.5a4.5 4.5 0 01-4.5 4.5H10a4.5 4.5 0 01-4.5-4.5c0-2.5 2-4.5 4.5-4.5h2a4.5 4.5 0 014.5 4.5z" />
+            </svg>
             Waze
           </a>
         </div>
@@ -2367,7 +2671,8 @@
       <div class="dress-elegante-tag">FORMAL ELEGANTE</div>
 
       <div class="dresscode-specs">
-        <div class="dresscode-line"><strong>Damas:</strong> Vestido <span class="dresscode-highlight">(No blanco ni verde)</span></div>
+        <div class="dresscode-line"><strong>Damas:</strong> Vestido <span class="dresscode-highlight">(No blanco ni
+            verde)</span></div>
         <div class="dresscode-line"><strong>Caballeros:</strong> Traje formal</div>
       </div>
 
@@ -2393,17 +2698,21 @@
     <section class="rsvp-footer-section">
       <div class="buttons-rsvp-wrap">
         <!-- Botón Pincel Dorado idéntico a Canva para el Formulario -->
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfnvWczyOkLWWNtJJ7KBc9iNooBkBBZWFAp6IRsKtsndZ-Cew/viewform" target="_blank" rel="noopener noreferrer" class="btn-brush-gold" style="min-width: 290px;">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfnvWczyOkLWWNtJJ7KBc9iNooBkBBZWFAp6IRsKtsndZ-Cew/viewform"
+          target="_blank" rel="noopener noreferrer" class="btn-brush-gold" style="min-width: 290px;">
           CONFIRMA TU ASISTENCIA
           <svg viewBox="0 0 24 24" fill="currentColor">
-            <path d="M5 12h14M12 5l7 7-7 7"/>
+            <path d="M5 12h14M12 5l7 7-7 7" />
           </svg>
         </a>
 
         <!-- Botón WhatsApp para confirmación instantánea -->
-        <a id="btn-whatsapp" href="https://wa.me/51974370126?text=%C2%A1Hola%20Ruth%20Yaneth%20y%20Edson%20Mateo!%20%E2%9D%A4%EF%B8%8F%20Con%20mucha%20alegr%C3%ADa%20confirmo%20mi%20asistencia%20a%20su%20Boda.%20%C2%A1Nos%20vemos%20el%2028%20de%20Noviembre!" target="_blank" class="btn-whatsapp-canva">
+        <a id="btn-whatsapp"
+          href="https://wa.me/51974370126?text=%C2%A1Hola%20Edson%20Mateo%20y%20Ruth%20Yaneth!%20%E2%9D%A4%EF%B8%8F%20Con%20mucha%20alegr%C3%ADa%20confirmo%20mi%20asistencia%20a%20su%20Boda.%20%C2%A1Nos%20vemos%20el%2028%20de%20Noviembre!"
+          target="_blank" class="btn-whatsapp-canva">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0012.04 2zm0 17.72c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.082 8.082 0 01-1.24-4.29c0-4.47 3.64-8.11 8.11-8.11 2.16 0 4.2 1.05 5.73 2.58a8.04 8.04 0 012.38 5.73c0 4.47-3.64 8.11-8.11 8.11zm4.44-6.08c-.24-.12-1.44-.71-1.66-.79-.22-.08-.39-.12-.55.12-.16.24-.63.79-.77.95-.14.16-.28.18-.52.06-.24-.12-1.03-.38-1.96-1.21-.72-.65-1.21-1.45-1.35-1.69-.14-.24-.01-.37.11-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.55-1.33-.76-1.82-.2-.48-.41-.41-.56-.42h-.48c-.16 0-.43.06-.65.3-.22.24-.85.83-.85 2.02 0 1.19.87 2.34.99 2.5.12.16 1.71 2.61 4.14 3.66.58.25 1.03.4 1.38.51.58.18 1.11.16 1.53.1.47-.07 1.44-.59 1.64-1.16.2-.57.2-1.06.14-1.16-.06-.1-.22-.16-.46-.28z"/>
+            <path
+              d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0012.04 2zm0 17.72c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.082 8.082 0 01-1.24-4.29c0-4.47 3.64-8.11 8.11-8.11 2.16 0 4.2 1.05 5.73 2.58a8.04 8.04 0 012.38 5.73c0 4.47-3.64 8.11-8.11 8.11zm4.44-6.08c-.24-.12-1.44-.71-1.66-.79-.22-.08-.39-.12-.55.12-.16.24-.63.79-.77.95-.14.16-.28.18-.52.06-.24-.12-1.03-.38-1.96-1.21-.72-.65-1.21-1.45-1.35-1.69-.14-.24-.01-.37.11-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.55-1.33-.76-1.82-.2-.48-.41-.41-.56-.42h-.48c-.16 0-.43.06-.65.3-.22.24-.85.83-.85 2.02 0 1.19.87 2.34.99 2.5.12.16 1.71 2.61 4.14 3.66.58.25 1.03.4 1.38.51.58.18 1.11.16 1.53.1.47-.07 1.44-.59 1.64-1.16.2-.57.2-1.06.14-1.16-.06-.1-.22-.16-.46-.28z" />
           </svg>
           Confirmar por WhatsApp
         </a>
@@ -2430,7 +2739,7 @@
       const params = new URLSearchParams(window.location.search);
       const customDate = params.get('fecha');
       let target;
-      
+
       if (customDate) {
         target = new Date(customDate.includes('T') ? customDate : `${customDate}T09:30:00`);
       } else {
@@ -2486,7 +2795,7 @@
       // Configurar número de iconos de personas y texto si existen
       const passTextEl = document.getElementById('passes-text');
       const iconsContainer = document.getElementById('person-icons-container');
-      
+
       if (passTextEl && iconsContainer) {
         const numbersWords = ['Cero', 'Una persona', 'Dos personas', 'Tres personas', 'Cuatro personas', 'Cinco personas', 'Seis personas'];
         passTextEl.textContent = numbersWords[pases] || `${pases} personas`;
@@ -2502,10 +2811,10 @@
         }
       }
 
-      // WhatsApp link con mensaje dinámico para Ruth Yaneth y Edson Mateo
+      // WhatsApp link con mensaje dinámico para Edson Mateo y Ruth Yaneth
       const guestPhrase = invitado ? ` de parte de *${decodeURIComponent(invitado)}*` : '';
       const passesPhrase = pases ? ` para *${pases} personas*` : '';
-      const msg = encodeURIComponent(`¡Hola Ruth Yaneth y Edson Mateo! ❤️ Con mucha alegría confirmo mi asistencia a su Boda${guestPhrase}${passesPhrase}. ¡Nos vemos el 28 de Noviembre!`);
+      const msg = encodeURIComponent(`¡Hola Edson Mateo y Ruth Yaneth! ❤️ Con mucha alegría confirmo mi asistencia a su Boda${guestPhrase}${passesPhrase}. ¡Nos vemos el 28 de Noviembre!`);
       document.getElementById('btn-whatsapp').href = `https://wa.me/${tel}?text=${msg}`;
     }
 
@@ -2906,7 +3215,7 @@
       const btn = document.getElementById('btn-add-calendar');
       if (!btn) return;
 
-      const title = "Boda de Ruth Yaneth & Edson Mateo";
+      const title = "Boda de Edson Mateo & Ruth Yaneth";
       const details = "Acompáñanos a celebrar nuestra boda.\nCeremonia: Templo Compañía de Jesús (9:30 am)\nRecepción: Eventos Lufa (1:00 pm).";
       const location = "Templo Compañía de Jesús, Plaza de Armas, Cusco";
       const dates = "20261128T143000Z/20261129T030000Z";
@@ -2920,7 +3229,7 @@
       const encLocation = encodeURIComponent(location);
 
       const webUrl = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encTitle}&dates=${dates}&details=${encDetails}&location=${encLocation}`;
-      
+
       const ua = navigator.userAgent || navigator.vendor || window.opera || '';
       const isAndroid = /Android/i.test(ua);
       const isIOS = /iPhone|iPad|iPod/i.test(ua);
@@ -2939,11 +3248,11 @@
           const icsContent = [
             'BEGIN:VCALENDAR',
             'VERSION:2.0',
-            'PRODID:-//Boda Ruth y Edson//ES',
+            'PRODID:-//Boda Edson y Ruth//ES',
             'CALSCALE:GREGORIAN',
             'METHOD:PUBLISH',
             'BEGIN:VEVENT',
-            'SUMMARY:Boda de Ruth Yaneth & Edson Mateo',
+            'SUMMARY:Boda de Edson Mateo & Ruth Yaneth',
             'DESCRIPTION:Acompáñanos a celebrar nuestra boda.\\nCeremonia: Templo Compañía de Jesús (9:30 am)\\nRecepción: Eventos Lufa (1:00 pm).',
             'LOCATION:Templo Compañía de Jesús\\, Plaza de Armas\\, Cusco',
             'DTSTART:20261128T143000Z',
@@ -2952,7 +3261,7 @@
             'SEQUENCE:0',
             'BEGIN:VALARM',
             'TRIGGER:-PT24H',
-            'DESCRIPTION:Recordatorio de la Boda de Ruth y Edson mañana',
+            'DESCRIPTION:Recordatorio de la Boda de Edson y Ruth mañana',
             'ACTION:DISPLAY',
             'END:VALARM',
             'END:VEVENT',
@@ -2963,7 +3272,7 @@
           const url = window.URL.createObjectURL(blob);
           const link = document.createElement('a');
           link.href = url;
-          link.setAttribute('download', 'Boda-Ruth-y-Edson.ics');
+          link.setAttribute('download', 'Boda-Edson-y-Ruth.ics');
           document.body.appendChild(link);
           link.click();
           document.body.removeChild(link);
@@ -2987,4 +3296,5 @@
     });
   </script>
 </body>
+
 </html>
